@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASHY KIDS Ecommerce website design </title>
+    <link rel="stylesheet" type="text/css" href="syle.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=your-client-id&currency=USD"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   
+
+</head>
+
+<body>
+    <div class="header">
+
+   
+        <div class="container">
+           <div class="navbar"> 
+               <div class="logo">
+                  <a href="index.html"> <img src="IMAGES/logo2.jpg" width="200px" ></a>
+               </div>
+               <nav>
+                   <ul id="MenuItems">
+                       <li><a href ="index.html">Home</a></li>
+                       <li><a href ="Productsdetails.html">Products</a></li>
+                       <li><a href ="About.html">About</a></li>
+                       <li><a href ="Contact.html">Contant</a></li>
+                       <li><a href ="Account.html">Account</a></li>
+                   </ul>
+               </nav>
+               <div class="cart">
+                <a href="cart.html"><img src="IMAGES/cart.jpg" width="30px" height="30px"></a>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+       
+                       <div class="cart-container">
+                        <h1>Your Cart</h1>
+                        <table id="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Size</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Subtotal</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>   
+                            <tbody id="cart-items">
+                                <!-- Cart items will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                        <div id="cart-total"></div>
+                    </div>
+
+                    <div class="checkout">
+                        <button onclick="window.location.href='Payment.html'" class="btn">Proceed to Payment</button>
+                    </div>
+                    </div>
+                    
+                    <script src="cart.js"></script>
+                   
+
+                    
+
+    <!-------footer------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h4>Dowload our app</h4>
+                <p>Download for android and ios mobile phone.</p>
+
+            </div>
+            <div class="footer-col-2">
+                <img src="IMAGES/Last logo.jpg">
+                <P>Our purpose is to sustisfy our customers and sell legit products.</P>
+            </div>
+            <div class="footer-col-3">
+                <h5>FOLLOW US</h5>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+</html>

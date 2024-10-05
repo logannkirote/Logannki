@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASHY KIDS Ecommerce website design</title>
+    <link rel="stylesheet" type="text/css" href="syle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="IMAGES/logo2.jpg" width="200px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Productsdetails.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <a href="cart.html"><img src="IMAGES/cart.jpg" width="30px" height="30px"></a>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-5">
+            <img src="IMAGES/blue shirt front.jpg" width="90px" >
+            <h4>Blue Shirt</h4>
+            <h4>Ksh 1500</h4>
+            <select id="blue-shirt-size">
+                <option>select size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" id="blue-shirt-quantity" value="1" min="1">
+            <a href="#" class="btn" onclick="addToCart('Blue Shirt', 1500, 'blue-shirt-size', 'blue-shirt-quantity')">Add to cart</a>
+        </div>
+        <div class="col-5">
+          <img src="IMAGES/PURPLE DRESS.png" width="90px">
+          <h4>Purple dress</h4>
+          <h4>Ksh 1600</h4>
+          <select id="Purple-dress-size">
+              <option>select size</option>
+              <option>XXL</option>
+              <option>XL</option>
+              <option>Large</option>
+              <option>Medium</option>
+              <option>Small</option>
+          </select>
+          <input type="number" id="purple-dress-quantity" value="1" min="1">
+          <a href="#" class="btn" onclick="addToCart('Purple dress', 1600, 'Purple-dress-size', 'purple-dress-quantity')">Add to cart</a>
+      </div>
+      <div class="col-5">
+        <img src="IMAGES/SHOES 10.png" width="90px">
+        <h4>Red shoes</h4>
+        <h4>Ksh 1000</h4>
+        <select id="red-shoes-size">
+            <option>select size</option>
+            <option>XXL</option>
+            <option>XL</option>
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+        </select>
+        <input type="number" id="red-shoes-quantity" value="1" min="1">
+        <a href="#" class="btn" onclick="addToCart('Red shoes', 1000, 'red-shoes-size', 'red-shoes-quantity')">Add to cart</a>
+    </div>
+    <div class="col-5">
+      <img src="IMAGES/yellow dress.jpg" width="90px">
+      <h4>Yellow dress</h4>
+      <h4>Ksh 1500</h4>
+      <select id="yellow-dress-size">
+          <option>select size</option>
+          <option>XXL</option>
+          <option>XL</option>
+          <option>Large</option>
+          <option>Medium</option>
+          <option>Small</option>
+      </select>
+      <input type="number" id="yellow-dress-quantity" value="1" min="1">
+      <a href="#" class="btn" onclick="addToCart('Yellow dress', 1500, 'yellow-dress-size', 'yellow-dress-quantity')">Add to cart</a>
+  </div>
+  <div class="col-5">
+    <img src="IMAGES/white blouse.jpg" width="90px">
+    <h4>White blouse</h4>
+    <h4>Ksh 800</h4>
+    <select id="white-blouse-size">
+        <option>select size</option>
+        <option>XXL</option>
+        <option>XL</option>
+        <option>Large</option>
+        <option>Medium</option>
+        <option>Small</option>
+    </select>
+    <input type="number" id="white-blouse-quantity" value="1" min="1">
+    <a href="#" class="btn" onclick="addToCart('White blouse', 800, 'white-blouse-size', 'white-blouse-quantity')">Add to cart</a>
+</div>
+<div class="col-5">
+  <img src="IMAGES/SMALL SHOES.png" width="90px">
+  <h4>Small shoes</h4>
+  <h4>Ksh 500</h4>
+  <select id="small-shoes-size">
+      <option>select size</option>
+      <option>XXL</option>
+      <option>XL</option>
+      <option>Large</option>
+      <option>Medium</option>
+      <option>Small</option>
+  </select>
+  <input type="number" id="small-shoes-quantity" value="1" min="1">
+  <a href="#" class="btn" onclick="addToCart('Small shoes', 500, 'small-shoes-size', 'small-shoes-quantity')">Add to cart</a>
+</div>
+<div class="col-5">
+  <img src="IMAGES/CREAM SWEETER.png" width="90px">
+  <h4>Cream sweeter</h4>
+  <h4>Ksh 1200</h4>
+  <select id="cream-sweeter-size">
+      <option>select size</option>
+      <option>XXL</option>
+      <option>XL</option>
+      <option>Large</option>
+      <option>Medium</option>
+      <option>Small</option>
+  </select>
+  <input type="number" id="cream-sweeter-quantity" value="1" min="1">
+  <a href="#" class="btn" onclick="addToCart('Cream sweeter', 1200, 'cream-sweeter-size', 'cream-sweeter-quantity')">Add to cart</a>
+</div>
+
+    </div>
+
+    <script src="cart.js"></script>
+
+
+    <!-------footer------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h4>Dowload our app</h4>
+                <p>Download for android and ios mobile phone.</p>
+
+            </div>
+            <div class="footer-col-2">
+                <img src="IMAGES/Last logo.jpg">
+                <P>Our purpose is to sustisfy our customers and sell legit products.</P>
+            </div>
+            <div class="footer-col-3">
+                <h5>FOLLOW US</h5>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <script src="cart.js"></script>
+    
+</body>
+</html>

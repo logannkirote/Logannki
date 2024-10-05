@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASHY KIDS Ecommerce website design </title>
+    <link rel="stylesheet" type="text/css" href="syle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div class="header">
+
+   
+        ><div class="container">
+           <div class="navbar"> 
+               <div class="logo">
+                  <a href="index.html"> <img src="IMAGES/logo2.jpg" width="200px" ></a>
+               </div>
+               <nav>
+                   <ul id="MenuItems">
+                       <li><a href ="index.html">Home</a></li>
+                       <li><a href ="Productsdetails.html">Products</a></li>
+                       <li><a href ="About.html">About</a></li>
+                       <li><a href ="Contact.html">Contant</a></li>
+                       <li><a href ="Account.html">Account</a></li>
+       
+                   </ul>
+               </nav>
+               <div class="cart">
+               <a href="cart.html"> <img src="IMAGES/cart.jpg" width="30px" height="30px"></a>
+               <span id="cart-count">0</span>
+               </div>
+           </div>
+<!----------account-page---------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+
+                 <form id="Loginform" action="login.php" method="POST">
+                    <input type="text" name="username"  placeholder="Username">
+                    <input type="password" name="password" placeholder="password">
+                    <button type="submit" class="btn"> Login</button>
+                    <a href="">Forgot Password</a>
+
+                 </form>  
+                 <form id="Regform" action="register.php" method="POST">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email"  placeholder="email" required>
+                    <input type="password" name="password"  placeholder="password" required>
+                    <button type="submit" class="btn"> Register</button>
+
+                 </form>  
+                 
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+   
+<a href="logout.php">Logout</a>
+
+
+
+
+    <!-------footer------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h4>Dowload our app</h4>
+                <p>Download for android and ios mobile phone.</p>
+
+            </div>
+            <div class="footer-col-2">
+                <img src="IMAGES/Last logo.jpg">
+                <P>Our purpose is to sustisfy our customers and sell legit products.</P>
+            </div>
+            <div class="footer-col-3">
+                <h5>FOLLOW US</h5>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-------js for toogle form---------> 
+<script>
+
+    var Loginform=document.getElementById("Loginform");
+    var Regform=document.getElementById("Regform");
+    var indicator=document.getElementById("indicator");
+
+    function register(){
+        Regform.style.transform="translatex(0px)";
+        Loginform.style.transform="translatex(0px)";
+        indicator.style.transform="translate(100px)";
+    }
+
+    function login(){
+        Regform.style.transform="translatex(300px)";
+        Loginform.style.transform="translatex(300px)";
+        indicator.style.transform="translate(0px)";
+    }
+
+
+
+</script>
+<script src="cart.js"></script>
+
+
+</body>
+</html>
